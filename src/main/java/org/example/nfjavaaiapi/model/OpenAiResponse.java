@@ -1,4 +1,4 @@
-package org.example.nfjavaonlde270125chatgptapi.model;
+package org.example.nfjavaaiapi.model;
 
 import java.util.List;
 
@@ -17,4 +17,8 @@ import java.util.List;
  * }
  */
 public record OpenAiResponse(List<OpenAiChoice> choices) {
+
+    public String get(){
+        return this.choices().getFirst().message().content();
+    }
 }

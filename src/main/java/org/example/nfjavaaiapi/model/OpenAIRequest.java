@@ -1,4 +1,4 @@
-package org.example.nfjavaonlde270125chatgptapi.model;
+package org.example.nfjavaaiapi.model;
 
 
 import java.util.List;
@@ -10,5 +10,12 @@ import java.util.List;
  *      "temperature": 0.7
  *    }
  */
-public record OpenAIRequest(String model, List<OpenAiMessage> messages, double temperature) {
+public record OpenAIRequest(
+        String model,
+        List<OpenAiMessage> messages,
+        double temperature) {
+
+    public OpenAIRequest(String model, String input, double temperature) {
+        this(model, List.of(new OpenAiMessage("user", input)), temperature);
+    }
 }

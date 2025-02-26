@@ -1,4 +1,4 @@
-package org.example.nfjavaonlde270125chatgptapi.model;
+package org.example.nfjavaaiapi.model;
 
 /**
  * {

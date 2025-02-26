@@ -1,4 +1,4 @@
-package org.example.nfjavaonlde270125chatgptapi;
+package org.example.nfjavaaiapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
