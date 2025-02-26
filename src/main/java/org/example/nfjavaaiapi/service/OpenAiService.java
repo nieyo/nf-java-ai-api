@@ -1,13 +1,11 @@
 package org.example.nfjavaaiapi.service;
 
 import org.example.nfjavaaiapi.model.OpenAIRequest;
-import org.example.nfjavaaiapi.model.OpenAiMessage;
 import org.example.nfjavaaiapi.model.OpenAiResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
-import java.util.List;
 
 @Service
 public class OpenAiService {
