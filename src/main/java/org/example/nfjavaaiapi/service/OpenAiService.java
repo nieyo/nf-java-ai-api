@@ -32,13 +32,11 @@ public class OpenAiService {
 
     public String aiPredictDietType(String input) {
 
-        String AiPrompt = String.format("""
+        input = String.format("""
             Classify '%s' as 'vegan,' 'vegetarian,' or 'regular.'
             If it is invalid, unrecognizable, or not a known ingredient, return 'invalid: Only ingredients.'
             Return only the classification.
             """, input);
-
-        input = AiPrompt;
         OpenAiResponse response = restClient.post()
                 .body(new OpenAIRequest("gpt-4o", input, 0.7))
                 .retrieve()
